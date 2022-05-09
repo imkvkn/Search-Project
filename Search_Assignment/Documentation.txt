@@ -1,0 +1,116 @@
+
+PRIMARY GOAL
+
+/**
+
+Built a command line application.
+
+*/
+
+
+/**
+
+File Path and Search Keyword are received as input from the user.
+
+*/
+
+
+/**
+
+Sentences matching this search will be displayed in the console.
+
+*/
+
+SECONDARY GOAL
+
+
+/**
+    The Design Pattern used here is Filter Design Pattern.
+
+
+    Definition: Filter pattern or Criteria pattern is a design pattern that
+    enables developers to filter a set of objects using different criteria
+    and chaining them in a decoupled way through logical operations.
+
+    Since, we need to filter the text files using some specified criteria ie., keyword
+    Hence, used this design pattern.
+
+
+*/
+
+
+/**
+
+Dependency Tool used is Maven.
+
+Maven is chiefly used for Java-based projects, helping to download dependencies,
+which refers to the libraries or JAR files. The tool helps get the right JAR files
+for each project as there may be different versions of separate packages.
+
+It is used for getting JUnit dependency which is used for testing.
+*/
+
+
+
+Documentation:
+
+
+
+All the methods have been explained via comments and you just need to clone the repo and go to
+SearchAssignment.java file and you can run the main method to start the application.
+
+Note: Java 16 is used for this project, so please ensure that you have same java version in your IDE
+If you don't have that version, then please change the java version in pom.xml file and use that version.
+
+
+
+
+Methods:
+
+
+/**
+     * Gets File Content from the given File using FilePath
+     * @param FILE_PATH
+     * @return FILE_CONTENT
+     * @throws FileNotFoundException
+     */
+     public String getFileContent(String FILE_PATH) throws FileNotFoundException
+
+
+ /**
+     *  Gets file path from user
+      * @return absolute file path which is given as input
+     */
+    public String getFilePath()
+
+
+
+
+  /**
+     * Gets Search Snippet from the user
+     * @return search_snippet which is given as input
+     */
+    public String getSearchSnippet()
+
+
+
+
+/**
+     * Searches and Calls Print Matching Snippet
+     * @param file_content
+     * @param search_snippet
+     */
+    public void search(String file_content, String search_snippet)
+
+
+
+ /**
+     * Prints all the sentences which contains the search_snippet
+     * @param matcher
+     * @param search_snippet
+     */
+    private void searchAndPrintResults(Matcher matcher,String search_snippet)
+
+
+
+Note: Have run coverage report and screenshot is attached in resources section
